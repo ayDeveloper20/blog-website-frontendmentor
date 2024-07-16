@@ -1,0 +1,79 @@
+:root{
+    --primary-color-yellow:hsl(47, 88%, 63%);
+    --white-color:hsl(0, 0%, 100%);
+    --black-color:hsl(0, 0%, 7%);
+    --gray-color:hsl(0, 0%, 50%);
+    --font-size: 16px;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: var(--font-size);
+}
+body{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--primary-color-yellow);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.blog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 384px;
+    height: 522px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 0px var(--black-color);
+    border-color: var(--black-color);
+    border-style: solid;
+    border-width: 1px;
+    justify-content: space-between;
+}
+.blog .blogimg{
+    width: 100%;
+}
+.blog .details .tag-text{
+    padding: 4px 12px;
+    background-color: var(--primary-color-yellow);
+    width: fit-content;
+    border-radius: 4px;
+    font-size: calc(var(--font-size) - 2px);
+    margin: 0 0 12px 0;
+    font-weight: bold;
+}
+.blog .details .date-text
+{
+    font-size: calc(var(--font-size) - 2px);
+    font-weight: 500;
+    margin : 0 0 12px;
+}
+.blog .details .title-text{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+.blog .details .description-text{
+    font-weight: 500;
+    font-size: var(--font-size);
+    color: var(--gray-color);
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    margin: 0 12px 0 0;
+    width: 32px;
+    height: 32px;
+}
+.user h3{
+    font-size: 14px;
+}
